@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ThermoH2 | Jugend forscht</title>
+    <meta name="description" content="ThermoH2: Katalytische Hochtemperatur-Pyrolyse gemischter Kunststoffe zur Erzeugung von Wasserstoff und festem Kohlenstoff. Projektüberblick, Aufbau, Theorie, Ergebnisse, Labor, Spenden, Kontakt." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Zum Inhalt</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="ThermoH2 Start">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">ThermoH2</span>
+            <span class="brand-sub">Jugend forscht Projekt</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navlinks">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <nav class="navlinks" id="navlinks" aria-label="Hauptnavigation">
+          <a href="#projekt">Projekt</a>
+          <a href="#konzept">Konzept</a>
+          <a href="#aufbau">Aufbau</a>
+          <a href="#theorie">Theorie</a>
+          <a href="#experimente">Experimente</a>
+          <a href="#ergebnisse">Ergebnisse</a>
+          <a href="#weiterentwicklung">Weiterentwicklung</a>
+          <a href="#labor">Labor</a>
+          <a class="cta" href="#spenden">Spenden</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+
+      <div class="container hero">
+        <div class="hero-left">
+          <p class="kicker">Katalytische Hochtemperatur Pyrolyse</p>
+          <h1>Wasserstoff aus Mischkunststoffen. Messbar, sicher, iterativ.</h1>
+          <p class="lead">
+            ThermoH2 untersucht, wie sich schwer recycelbare Kunststoffgemische in einem Batch Reaktor in ein Gasgemisch mit hoher Wasserstofffraktion und in festen Kohlenstoff überführen lassen.
+            Fokus sind Aufbau, Prozessführung, Katalysatoren, Gasaufbereitung, Sensorik und Sicherheitskonzept.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#konzept">Projektüberblick</a>
+            <a class="button ghost" href="#download">Ausarbeitung herunterladen</a>
+          </div>
+
+          <div class="hero-facts" role="list">
+            <div class="fact" role="listitem">
+              <div class="fact-top">Reaktor</div>
+              <div class="fact-bottom">Batch System BERT</div>
+            </div>
+            <div class="fact" role="listitem">
+              <div class="fact-top">Zielprodukte</div>
+              <div class="fact-bottom">H2 und fester C</div>
+            </div>
+            <div class="fact" role="listitem">
+              <div class="fact-top">Schwerpunkte</div>
+              <div class="fact-bottom">Katalyse, Gasreinigung, Sicherheit</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card media-card">
+            <div class="card-head">
+              <div>
+                <div class="card-title">Kurzvideo</div>
+                <div class="card-sub">Einbau als Datei oder YouTube Embed</div>
+              </div>
+              <button class="chip" type="button" id="videoToggle">Video wechseln</button>
+            </div>
+
+            <div class="video-wrap" data-mode="file" id="videoWrap">
+              <video class="video" controls preload="metadata" poster="assets/hero-poster.jpg">
+                <source src="assets/thermoh2.mp4" type="video/mp4" />
+                Dein Browser unterstützt das Video Tag nicht.
+              </video>
+            </div>
+
+            <div class="hint">
+              Platzhalter: assets/thermoh2.mp4 und assets/hero-poster.jpg
+            </div>
+          </div>
+
+          <div class="card image-card">
+            <div class="image-placeholder" aria-label="Platzhalter für Header Bild oder Reaktor Foto">
+              <div class="ph-title">Platz für ein starkes Foto</div>
+              <div class="ph-sub">BERT, Labor oder Versuchsstand</div>
+            </div>
+            <div class="hint">Ersetze diesen Block später durch ein echtes Bild</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="projekt">
+        <div class="container grid2">
+          <div>
+            <h2>Projekt in einem Satz</h2>
+            <p>
+              ThermoH2 entwickelt und untersucht einen sicher betriebenen Batch Pyrolyse Reaktor, der Kunststoffgemische thermochemisch umsetzt und dabei ein wasserstoffreiches Gas und festen Kohlenstoff erzeugt, mit Fokus auf Messbarkeit, Reproduzierbarkeit und Weiterentwicklung.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Problem</h3>
+                <p>Mischkunststoffe und Verbunde sind in der Praxis schwer zu recyceln. Mechanische Wege scheitern oft an Sortierung, Additiven oder Laminaten.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Ansatz</h3>
+                <p>Thermische Zersetzung in inertem Milieu, kombiniert mit Katalysatoren, Gasführung und Gasaufbereitung, um H2 Ausbeute und Gasqualität zu verbessern.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Nutzen</h3>
+                <p>Potenzial für Rohstoffrückgewinnung und Energieträger, plus fester Kohlenstoff als Nebenprodukt mit möglicher stofflicher Nutzung.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Auf einen Blick</div>
+              <ul class="list">
+                <li>Reaktortyp: Batch Pyrolyse</li>
+                <li>Schutzgas: Argon</li>
+                <li>Katalysatoren: Ni basierte Systeme, Fe Oxid auf Al2O3, Trägervarianten</li>
+                <li>Gasaufbereitung: Trocknung, Sicherheitsstufen</li>
+                <li>Messung: Sensorik für Wasserstoff, Prozessdaten, Versuchsdokumentation</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Bilder</div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Platzhalter 1</div>
+                <div class="ph-sub">Schema oder Foto</div>
+              </div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Platzhalter 2</div>
+                <div class="ph-sub">Katalysator Setup</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section alt" id="konzept">
+        <div class="container">
+          <h2>Konzept</h2>
+          <p class="section-lead">
+            Hier beschreiben wir die Prozessidee von Input bis Output. Du kannst später reale Zahlen einfügen, sobald ihr sie veröffentlichen wollt.
+          </p>
+
+          <div class="flow">
+            <div class="flow-step">
+              <div class="flow-num">1</div>
+              <div class="flow-body">
+                <h3>Feedstock Auswahl</h3>
+                <p>Gemischte Kunststoffe, Verbunde, schwer trennbare Materialien. Dokumentation von Masse, Zusammensetzung, Additiven, Vorbehandlung.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">2</div>
+              <div class="flow-body">
+                <h3>Reaktor Betrieb</h3>
+                <p>Batch Betrieb unter inertem Schutzgas. Temperaturführung, Haltezeiten, Katalysatorbett und Gasabzug werden systematisch variiert.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">3</div>
+              <div class="flow-body">
+                <h3>Gasaufbereitung</h3>
+                <p>Abkühlung und Trocknung, definierte Messstrecke, Sicherheitskomponenten. Ziel: reproduzierbare Messwerte für Gasqualität und H2 Anteil.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">4</div>
+              <div class="flow-body">
+                <h3>Produkte</h3>
+                <p>Gasgemisch mit Wasserstofffraktion sowie fester Kohlenstoff. Optional: Kondensate werden getrennt betrachtet und bewertet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <div class="callout-title">Platz für euer Prozessschema</div>
+            <div class="callout-body">
+              <div class="image-placeholder wide">
+                <div class="ph-title">Prozessdiagramm</div>
+                <div class="ph-sub">Pfeile, Stufen, Messpunkte</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="aufbau">
+        <div class="container">
+          <h2>Aufbau</h2>
+          <p class="section-lead">
+            Beschreibung des Reaktors BERT als System. Hier arbeiten wir mit Modulen, damit du später Versionen wie BERT I, BERT II ergänzen kannst.
+          </p>
+
+          <div class="cards cols3">
+            <div class="card">
+              <div class="card-title">Reaktorkern</div>
+              <p>Reaktionsraum, thermische Isolation, definierte Einbringung des Kunststoffs, kontrollierte Gasabführung, Materialauswahl nach Temperatur und Chemikalienbeständigkeit.</p>
+              <div class="image-placeholder small">
+                <div class="ph-title">Foto oder Schnitt</div>
+                <div class="ph-sub">Reaktorkern</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Katalysatorzone</div>
+              <p>Träger und aktive Phase, Positionierung im Gasstrom, Austauschbarkeit, Vergleich verschiedener Systeme und Regenerationsideen.</p>
+              <div class="image-placeholder small">
+                <div class="ph-title">Bild</div>
+                <div class="ph-sub">Katalysatorbett</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Gasstrecke</div>
+              <p>Trocknung, Kühlung, Sensorik, Sicherheitskomponenten. Ziel: definierte Messbedingungen statt Schätzen.</p>
+              <div class="image-placeholder small">
+                <div class="ph-title">Schema</div>
+                <div class="ph-sub">Gasführung</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card wide-card">
+            <div class="wide-card-left">
+              <div class="card-title">Sicherheit und Messbarkeit</div>
+              <p>
+                Der Aufbau priorisiert kontrollierte Bedingungen. Dazu gehören Schutzgasführung, Leckagen Minimierung, Temperaturüberwachung, sichere Ableitung, Trocknung, Sensorik und definierte Versuchsprotokolle.
+                Hier könnt ihr später eure konkreten Sicherheitsmaßnahmen und Grenzwerte eintragen.
+              </p>
+              <ul class="list">
+                <li>Schutzgas und Dichtheit</li>
+                <li>Temperaturkontrolle und Bauteilgrenzen</li>
+                <li>Gasdetektion und definierte Messstrecke</li>
+                <li>Dokumentation jeder Änderung am Aufbau</li>
+              </ul>
+            </div>
+            <div class="wide-card-right">
+              <div class="image-placeholder wide">
+                <div class="ph-title">Sicherheitsdiagramm</div>
+                <div class="ph-sub">Sensoren, Ventile, Abführung</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section alt" id="theorie">
+        <div class="container grid2">
+          <div>
+            <h2>Theorie</h2>
+            <p>
+              Pyrolyse ist eine thermochemische Zersetzung organischer Polymere unter Ausschluss von Sauerstoff. Ohne Katalyse entstehen oft breite Produktverteilungen, inklusive Kondensate.
+              Katalysatoren können Crackreaktionen, Dehydrierung und Sekundärreaktionen beeinflussen und so die Gasphase in Richtung Wasserstoff verschieben.
+            </p>
+
+            <h3>Was ihr hier gut zeigen könnt</h3>
+            <ul class="list">
+              <li>Grundprinzip der Polymerzersetzung nach Temperaturbereichen</li>
+              <li>Rolle von Katalysatoren und Trägern</li>
+              <li>Warum Mischkunststoffe komplex sind</li>
+              <li>Warum Trocknung und definierte Messbedingungen wichtig sind</li>
+            </ul>
+
+            <div class="note">
+              Optional: Hier können später Reaktionsskizzen und Literaturwerte eingebaut werden.
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Platzhalter für Diagramme</div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Diagramm 1</div>
+                <div class="ph-sub">Temperaturprofil</div>
+              </div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Diagramm 2</div>
+                <div class="ph-sub">Gaszusammensetzung</div>
+              </div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Diagramm 3</div>
+                <div class="ph-sub">Katalysator Vergleich</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="experimente">
+        <div class="container">
+          <h2>Experimente</h2>
+          <p class="section-lead">
+            Hier listet ihr Versuchsreihen strukturiert. Ich habe dir ein Schema gebaut, das du einfach kopierst und mit euren echten Parametern füllst.
+          </p>
+
+          <div class="table-wrap" role="region" aria-label="Versuchsübersicht">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Versuchsreihe</th>
+                  <th>Variablen</th>
+                  <th>Messgrößen</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>R1: Basisbetrieb</td>
+                  <td>Temperatur, Haltezeit, Feedstock</td>
+                  <td>Gasvolumen, Sensorwerte, Rückstand</td>
+                  <td><span class="pill">in Arbeit</span></td>
+                </tr>
+                <tr>
+                  <td>R2: Katalysator A</td>
+                  <td>Katalysatormasse, Position</td>
+                  <td>H2 Signal, Kondensat, C Rückstand</td>
+                  <td><span class="pill ghost">geplant</span></td>
+                </tr>
+                <tr>
+                  <td>R3: Katalysator B</td>
+                  <td>Träger, Aktivphase, Regeneration</td>
+                  <td>Vergleichbarkeit, Stabilität</td>
+                  <td><span class="pill ghost">geplant</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <div class="callout-title">Platz für Versuchsprotokoll Screenshots</div>
+            <div class="callout-body">
+              <div class="image-placeholder wide">
+                <div class="ph-title">Protokollauszug</div>
+                <div class="ph-sub">Tabellen, Notizen, Aufbau Fotos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="ergebnisse">
+        <div class="container grid2">
+          <div>
+            <h2>Ergebnisse</h2>
+            <p>
+              In dieser Version steht bewusst noch kein Zahlenmaterial. Sobald ihr entscheidet, was öffentlich sein soll, bauen wir Diagramme ein.
+              Die Website kann Ergebnisse als kurze Kernaussagen zeigen und daneben den Download der vollständigen Ausarbeitung anbieten.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Reproduzierbarkeit</h3>
+                <p>Wie stabil sind die Messwerte bei gleichen Bedingungen, und welche Umbauten verbessern das.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Katalysator Effekt</h3>
+                <p>Was ändert sich sichtbar im H2 Signal und in Nebenprodukten bei unterschiedlichen Systemen.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Produktqualität</h3>
+                <p>Gas, Kondensate, fester Kohlenstoff. Welche Trennungen machen Sinn, und wie bewertet ihr das.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card" id="download">
+              <div class="card-title">Ausarbeitung</div>
+              <p>Hier kannst du eure PDF ablegen und direkt zum Download anbieten.</p>
+              <a class="button primary full" href="assets/ThermoH2_Ausarbeitung.pdf" download>PDF herunterladen</a>
+              <div class="hint">Datei später unter assets/ThermoH2_Ausarbeitung.pdf ablegen</div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Platzhalter: Ergebnisgrafiken</div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Grafik</div>
+                <div class="ph-sub">H2 Signal Verlauf</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="weiterentwicklung">
+        <div class="container">
+          <h2>Mögliche Weiterentwicklung</h2>
+          <p class="section-lead">
+            Hier kommt eure Roadmap. Ich habe die Punkte so formuliert, dass sie ambitioniert wirken, aber sauber begründet sind.
+          </p>
+
+          <div class="cards cols3">
+            <div class="card">
+              <div class="card-title">Skalierung und Kontinuität</div>
+              <p>Konzept für kontinuierliche Beschickung, stabilere Temperaturführung und standardisierte Messstrecken, ohne die Sicherheit zu verlieren.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Wärmeeffizienz</div>
+              <p>Isolationskonzept, Wärmerückgewinnung, definierte Heizprofile, Bewertung der Endothermie und der Gesamtenergiebilanz.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Analytik</div>
+              <p>Weiterführende Gasanalyse, Kalibrierungen, Vergleich mit Literatur, bessere Auflösung der Nebenprodukte, Charakterisierung des festen Kohlenstoffs.</p>
+            </div>
+          </div>
+
+          <div class="callout">
+            <div class="callout-title">Platz für Roadmap Grafik</div>
+            <div class="callout-body">
+              <div class="image-placeholder wide">
+                <div class="ph-title">Roadmap</div>
+                <div class="ph-sub">Versionen von BERT und Meilensteine</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="labor">
+        <div class="container grid2">
+          <div>
+            <h2>Unser privates Labor</h2>
+            <p>
+              ThermoH2 entsteht nicht in einem Institutsgebäude, sondern in einem privat aufgebauten Labor.
+              Das bedeutet viel Eigenleistung, viel Dokumentation und sehr konkrete Investitionen in Sicherheit, Messmittel und Material.
+            </p>
+
+            <h3>Wofür das Labor steht</h3>
+            <ul class="list">
+              <li>Eigenbau und Iteration mit sauberer Dokumentation</li>
+              <li>Fokus auf Sicherheit, saubere Gasführung, stabile Aufbauten</li>
+              <li>Messbarkeit statt Bauchgefühl</li>
+              <li>Transparenz bei Material und Kosten</li>
+            </ul>
+
+            <div class="image-placeholder wide">
+              <div class="ph-title">Labor Foto oder Panorama</div>
+              <div class="ph-sub">Arbeitsfläche, Geräte, Sicherheitsbereich</div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card" id="spenden">
+              <div class="card-title">Spenden und Unterstützung</div>
+              <p>
+                Wenn du ThermoH2 unterstützen willst, kannst du mit einer Spende helfen, Materialkosten und Sicherheitskomponenten zu finanzieren.
+                Wir dokumentieren transparent, wofür Mittel eingesetzt werden.
+              </p>
+
+              <div class="donation-box">
+                <div class="donation-row">
+                  <div class="donation-label">Spendenziel</div>
+                  <div class="donation-value" id="goalValue">2.000 €</div>
+                </div>
+                <div class="progress" aria-label="Spendenfortschritt">
+                  <div class="progress-bar" id="progressBar" style="width: 22%"></div>
+                </div>
+                <div class="donation-row">
+                  <div class="donation-label">Aktuell</div>
+                  <div class="donation-value" id="currentValue">440 €</div>
+                </div>
+
+                <div class="donation-actions">
+                  <a class="button primary full" href="#" id="donateButton">Spendenlink einfügen</a>
+                  <button class="button ghost full" type="button" id="openCosts">Kostenübersicht ansehen</button>
+                </div>
+
+                <div class="hint">
+                  Setze später euren echten Spendenlink ein, zum Beispiel PayPal Me oder Betterplace.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Platzhalter: Geräte und Sicherheit</div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Foto</div>
+                <div class="ph-sub">Sensorik und Gasstrecke</div>
+              </div>
+              <div class="image-placeholder small">
+                <div class="ph-title">Foto</div>
+                <div class="ph-sub">Schutzmaßnahmen</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="kontakt">
+        <div class="container grid2">
+          <div>
+            <h2>Kontakt</h2>
+            <p>
+              Wenn du Fragen zum Projekt hast, Kooperationen anbieten willst oder Unterstützung ermöglichen möchtest, schreib uns direkt.
+            </p>
+
+            <div class="card">
+              <div class="card-title">Kontaktdaten</div>
+              <ul class="list">
+                <li>Name Team: ThermoH2</li>
+                <li>E Mail: <a href="mailto:thermoh2@example.com">thermoh2@example.com</a></li>
+                <li>Ort: Deutschland</li>
+              </ul>
+              <div class="hint">Ersetze die E Mail Adresse und optional Impressum Daten</div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Nachricht senden</div>
+
+              <form id="contactForm" class="form" method="POST" action="https://formspree.io/f/DEIN_FORM_ID">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">E Mail</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+
+                <div class="field">
+                  <label for="subject">Betreff</label>
+                  <input id="subject" name="subject" type="text" required />
+                </div>
+
+                <div class="field">
+                  <label for="message">Nachricht</label>
+                  <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button class="button primary" type="submit">Senden</button>
+                  <button class="button ghost" type="button" id="mailFallback">Alternativ per E Mail</button>
+                </div>
+
+                <p class="hint">
+                  Damit das Formular wirklich ankommt, brauchst du Formspree oder Netlify Forms. Wenn du nichts einrichten willst, nutze den Alternativ Button.
+                </p>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">ThermoH2</div>
+          <div class="footer-sub">Jugend forscht Projekt</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#top">Nach oben</a>
+          <a href="#download">PDF</a>
+          <a href="#spenden">Spenden</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <div>© <span id="year"></span> ThermoH2</div>
+        <div class="footer-note">Impressum und Datenschutz optional ergänzen</div>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="costModal" aria-label="Kostenübersicht">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Kostenübersicht</div>
+          <div class="modal-sub">Platzhalter Werte, später ersetzbar</div>
+        </div>
+        <button class="icon-btn" type="button" id="closeCosts" aria-label="Schließen">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cost-grid">
+          <div class="cost-item">
+            <div class="cost-name">Sensorik und Messstrecke</div>
+            <div class="cost-value">300 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Reaktor Material und Dichtungen</div>
+            <div class="cost-value">450 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Katalysatoren und Träger</div>
+            <div class="cost-value">250 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Sicherheitskomponenten</div>
+            <div class="cost-value">400 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Verbrauchsmaterial</div>
+            <div class="cost-value">200 €</div>
+          </div>
+        </div>
+
+        <div class="note">
+          Wenn du willst, mache ich daraus später eine echte, filterbare Tabelle und verlinke auf Belege, ohne dass es überladen wirkt.
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
