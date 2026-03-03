@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/0NpGBcfS/Thermo-H2-icon.png">
   </head>
 
   <body>
@@ -17,7 +18,7 @@
     <header class="site-header" id="top">
       <div class="container nav">
         <a class="brand" href="#top" aria-label="ThermoH2 Start">
-          <span class="brand-mark" aria-hidden="true"></span>
+          <img src="https://i.postimg.cc/1XyvHL1R/Thermo-H2-02.png" alt="ThermoH2 Logo" class="brand-logo">
           <span class="brand-text">
             <span class="brand-name">ThermoH2</span>
             <span class="brand-sub">Jugend forscht Projekt</span>
@@ -97,11 +98,9 @@
           </div>
 
           <div class="card image-card">
-            <div class="image-placeholder" aria-label="Platzhalter für Header Bild oder Reaktor Foto">
-              <div class="ph-title">Platz für ein starkes Foto</div>
-              <div class="ph-sub">BERT, Labor oder Versuchsstand</div>
-            </div>
-            <div class="hint">Ersetze diesen Block später durch ein echtes Bild</div>
+            <img src="https://i.postimg.cc/BnZX0N4w/Jugend-forscht-Sieger-Hessen-23-02-2026-Foto-Infra-Serv-Wiesbaden-02.jpg" alt="BERT Batch Pyrolysereaktor im Labor"
+            class="hero-image"
+            >
           </div>
         </div>
       </div>
@@ -387,7 +386,7 @@
               </div>
               <div class="mini-card">
                 <h3>Produktqualität</h3>
-                <p>Gas, Kondensate, fester Kohlenstoff. Welche Trennungen machen Sinn, und wie bewertet ihr das.</p>
+                <p>Gas, Kondensate, Welche Trennungen machen Sinn, und wie bewertet ihr das.</p>
               </div>
             </div>
           </div>
@@ -490,12 +489,14 @@
                 </div>
 
                 <div class="donation-actions">
-                  <a class="button primary full" href="#" id="donateButton">Spendenlink einfügen</a>
+                  <button class="button primary full" type="button" id="donateOpen">
+                  Unterstützung senden
+                  </button>
                   <button class="button ghost full" type="button" id="openCosts">Kostenübersicht ansehen</button>
                 </div>
 
                 <div class="hint">
-                  Setze später euren echten Spendenlink ein, zum Beispiel PayPal Me oder Betterplace.
+                  Setze später eure PayPal Adresse und IBAN im Unterstützungsfenster ein.
                 </div>
               </div>
             </div>
@@ -527,8 +528,8 @@
               <div class="card-title">Kontaktdaten</div>
               <ul class="list">
                 <li>Name Team: ThermoH2</li>
-                <li>E Mail: <a href="mailto:thermoh2@example.com">thermoh2@example.com</a></li>
-                <li>Ort: Deutschland</li>
+                <li>E Mail: <a href="mailto:doron@doron.info">doron@doron.info</a>, <a href="mailto:jakob@hollingshaus.de">jakob@hollingshaus.de</a></li>
+                <li>Ort: Eltville, Deutschland</li>
               </ul>
               <div class="hint">Ersetze die E Mail Adresse und optional Impressum Daten</div>
             </div>
@@ -629,6 +630,47 @@
 
         <div class="note">
           Wenn du willst, mache ich daraus später eine echte, filterbare Tabelle und verlinke auf Belege, ohne dass es überladen wirkt.
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="donateModal" aria-label="Unterstützung">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Unterstützung für ThermoH2</div>
+          <div class="modal-sub">Privat, ohne Spendenquittung</div>
+        </div>
+        <button class="icon-btn" type="button" id="donateClose" aria-label="Schließen">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cost-grid">
+          <div class="cost-item">
+            <div class="cost-name">PayPal</div>
+            <div class="cost-value" id="ppValue">paypal.me DEINNAME</div>
+            <button class="button ghost full" type="button" data-copy="#ppValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Überweisung</div>
+            <div class="cost-value" id="ibanValue">IBAN HIER EINTRAGEN</div>
+            <button class="button ghost full" type="button" data-copy="#ibanValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Verwendungszweck</div>
+            <div class="cost-value" id="vzValue">ThermoH2 Labor</div>
+            <button class="button ghost full" type="button" data-copy="#vzValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Hinweis</div>
+            <div class="cost-value">Keine Gegenleistung, keine Spendenbescheinigung</div>
+          </div>
+        </div>
+
+        <div class="note">
+          Diese Unterstützung dient Material, Sicherheit und Messmitteln.
         </div>
       </div>
     </dialog>
