@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ThermoH2 | Jugend forscht</title>
+    <meta name="description" content="ThermoH2: Katalytische Hochtemperatur-Pyrolyse gemischter Kunststoffe zur Erzeugung von Wasserstoff und festem Kohlenstoff. Projektüberblick, Aufbau, Theorie, Ergebnisse, Labor, Presse, Unterstützung und Kontakt." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Zum Inhalt</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="ThermoH2 Start">
+          <img src="assets/TH2.png" alt="ThermoH2 Logo" class="brand-logo" />
+          <span class="brand-text">
+            <span class="brand-name">ThermoH2</span>
+            <span class="brand-sub">Jugend forscht Projekt</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navlinks">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <nav class="nav-shell" aria-label="Hauptnavigation">
+          <div class="navlinks nav-main" id="navlinks">
+            <a href="#projekt">Projekt</a>
+            <a href="#konzept">Konzept</a>
+            <a href="#aufbau">Aufbau</a>
+            <a href="#theorie">Theorie</a>
+            <a href="#experimente">Experimente</a>
+            <a href="#ergebnisse">Ergebnisse</a>
+          </div>
+
+          <div class="navlinks nav-meta">
+            <a href="#weiterentwicklung">Roadmap</a>
+            <a href="#labor">Labor</a>
+            <a href="#presse">Presse</a>
+            <a href="#kontakt">Kontakt</a>
+            <a class="cta" href="#spenden">Spenden</a>
+          </div>
+        </nav>
+      </div>
+      <div class="container hero">
+        <div class="hero-left">
+          <p class="kicker">Katalytische Hochtemperatur Pyrolyse</p>
+          <h1>Wasserstoff aus Mischkunststoffen. Messbar, sicher, iterativ.</h1>
+          <p class="lead">
+            ThermoH2 untersucht, wie sich schwer recycelbare Kunststoffgemische in einem Batch-Reaktor unter Sauerstoffausschluss thermochemisch in ein wasserstoffreiches Gasgemisch und festen Kohlenstoff überführen lassen. Im Mittelpunkt stehen Reaktorentwicklung, Katalysatorzone, Gasreinigung, Sensorik, Sicherheit und die saubere Dokumentation aller Versuchsparameter.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#konzept">Projektüberblick</a>
+            <a class="button ghost" href="#download">Ausarbeitung herunterladen</a>
+          </div>
+
+          <div class="hero-facts" role="list">
+            <div class="fact" role="listitem">
+              <div class="fact-top">Reaktor</div>
+              <div class="fact-bottom">Batch System BERT</div>
+            </div>
+            <div class="fact" role="listitem">
+              <div class="fact-top">Zielprodukte</div>
+              <div class="fact-bottom">H2 und fester C</div>
+            </div>
+            <div class="fact" role="listitem">
+              <div class="fact-top">Schwerpunkte</div>
+              <div class="fact-bottom">Katalyse, Gasreinigung, Sicherheit</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card media-card">
+            <div class="card-head">
+              <div>
+                <div class="card-title">Kurzvideo</div>
+                <div class="card-sub">Ein paar Bilder</div>
+              </div>
+              <button class="chip" type="button" id="videoToggle">Video wechseln</button>
+            </div>
+
+            <div class="video-wrap" data-mode="file" id="videoWrap">
+              <video class="video" controls preload="metadata" poster="assets/hero-poster.jpg">
+                <source src="assets/thermoh2.mp4" type="video/mp4" />
+                Dein Browser unterstützt das Video Tag nicht.
+              </video>
+            </div>
+
+            <div class="hint">
+              
+            </div>
+          </div>
+
+          <div class="card image-card">
+            <figure>
+              <img src="assets/jufo.jpg" alt="ThermoH2 bei Jugend forscht" class="hero-image" />
+              <figcaption class="hint">ThermoH2 bei Jugend forscht. Foto: InfraServ, 2026. Verwendung mit freundlicher Genehmigung.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="projekt">
+        <div class="container grid2">
+          <div>
+            <h2>Projekt in einem Satz</h2>
+            <p>
+              ThermoH2 entwickelt und untersucht einen sicher betriebenen Batch-Pyrolysereaktor, der Kunststoffgemische thermochemisch umsetzt und dabei ein wasserstoffreiches Gas sowie festen Kohlenstoff erzeugt. Der Anspruch ist nicht nur die Reaktion selbst, sondern ein kontrolliertes, messbares und weiterentwickelbares Gesamtsystem.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Problem</h3>
+                <p>Mischkunststoffe, Verbunde und stark verunreinigte Kunststoffströme sind mechanisch oft nur schwer oder gar nicht hochwertig recycelbar. Sortierung, Additive und Materialkombinationen begrenzen klassische Verfahren deutlich.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Ansatz</h3>
+                <p>Thermische Zersetzung unter Sauerstoffausschluss, kombiniert mit Katalysatoren, Inertgasführung, Gasreinigung und Sensorik. So soll die Produktverteilung gezielt beeinflusst und die Wasserstoffbildung verbessert werden.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Nutzen</h3>
+                <p>Neben einem wasserstoffhaltigen Gas entsteht fester Kohlenstoff als Nebenprodukt. Damit verbindet das Projekt Rohstoffrückgewinnung, Energieträgererzeugung und experimentelle Verfahrenstechnik in einem kompakten System.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Auf einen Blick</div>
+              <ul class="list">
+                <li>Reaktortyp: Batch-Pyrolyse</li>
+                <li>Schutzgas: Argon</li>
+                <li>Temperaturbereich: im Projekt typischerweise etwa 600 bis 900 °C</li>
+                <li>Katalysatoren: Nickel auf Aluminiumoxid, Eisenoxid auf Trägermaterial, Raney-Nickel</li>
+                <li>Gasaufbereitung: nachgeschaltete Reinigungs- und Trocknungsstufen</li>
+                <li>Messung: Thermoelemente, Wasserstoffsensor, kontinuierliche Versuchsdokumentation</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Projektbilder</div>
+              <figure>
+                <img src="assets/Aufbau.png" alt="Reaktoraufbau" class="content-image small">
+                <figcaption>Reaktoraufbau</figcaption>
+              <div class="hint"></div>
+
+              <figure>
+                <img src="assets/Katalysator.jpg" alt="Katalysatorherstellung" class="content-image small">
+                <figcaption>Katalysatorherstellung</figcaption>
+             
+              </figure>
+              <div class="hint"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section alt" id="konzept">
+        <div class="container">
+          <h2>Konzept</h2>
+          <p class="section-lead">
+            Das Grundprinzip von ThermoH2 ist die thermische Spaltung von Kunststoffabfällen unter Sauerstoffausschluss. Die Polymere werden in einer geschlossenen Reaktionskammer auf hohe Temperaturen erhitzt, dabei in kleinere Moleküle zerlegt und anschließend in einer Katalysatorzone sowie in der Gasnachbehandlung weiter beeinflusst.
+          </p>
+
+          <div class="flow">
+            <div class="flow-step">
+              <div class="flow-num">1</div>
+              <div class="flow-body">
+                <h3>Feedstock Auswahl</h3>
+                <p>Ausgangsmaterial sind gemischte Kunststoffe, Verbunde und schwer trennbare Fraktionen. Masse, Zusammensetzung, Vorbehandlung und Versuchsbedingungen werden dokumentiert, damit die Ergebnisse vergleichbar bleiben.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">2</div>
+              <div class="flow-body">
+                <h3>Pyrolyse im Hauptreaktor</h3>
+                <p>Vor dem Aufheizen wird das System mit Argon gespült, um Luftsauerstoff zu entfernen. Im Reaktionsraum werden die Polymerketten thermisch zerlegt. Ziel ist eine definierte Produktverteilung aus Gasphase, eventuell Kondensaten und festem Rückstand.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">3</div>
+              <div class="flow-body">
+                <h3>Katalytische Nachbehandlung</h3>
+                <p>Die entstehenden Kohlenwasserstoffe werden in oder hinter dem Hauptreaktor über geeignete Katalysatoren weiter umgesetzt. Dabei sollen Spaltungs- und Reformierungsreaktionen gefördert und die Bildung molekularen Wasserstoffs erhöht werden.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">4</div>
+              <div class="flow-body">
+                <h3>Gasreinigung und Messung</h3>
+                <p>Die gasförmigen Produkte werden über Reinigungsstufen geführt, getrocknet und in einer definierten Messstrecke erfasst. Temperatur, Gaszusammensetzung und Sensorwerte dienen der quantitativen Auswertung.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <div class="callout-title">Prozessschema</div>
+            <div class="callout-body">
+              <figure>
+                <img src="assets/Schema.png" alt="Prozessdiagramm und Reaktionsschema" class="schema">
+                <figcaption>Feedstock, Hauptreaktor, Katalysatorzone, Gasreinigung, Messsystem</figcaption>
+              </figure>
+              <div class="hint">Vereinfachtes Fließbild des ThermoH2-Systems mit Reaktions- und Messstrecke.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="aufbau">
+        <div class="container">
+          <h2>Aufbau</h2>
+          <p class="section-lead">
+            Der Pyrolysereaktor bildet die zentrale Reaktionseinheit. Typischerweise besteht das System aus einem hitzebeständigen Stahl- oder Quarzrohr, das in einen Ofen oder eine Heizmanschette eingebettet ist. Entscheidende Baugruppen sind Reaktionsrohr, Heizelement, Temperaturfühler, Gaszuführung, Gasabführung und temperaturbeständige Dichtungen.
+          </p>
+
+          <div class="cards cols3">
+            <div class="card">
+              <div class="card-title">Reaktorkern</div>
+              <p>Im Hauptreaktor wird das Kunststoffmaterial unter Sauerstoffausschluss auf hohe Temperaturen erhitzt. Die Polymerketten zerfallen dabei thermisch in kleinere Moleküle. Die Dichtheit des Reaktionsraums ist zentral, da schon geringe Sauerstoffmengen zu unerwünschter Oxidation führen können.</p>
+              <figure>
+                <img src="assets/Reaktorkern.jpg" alt="Reaktorkern" class="content-image" style="width:100%; max-width:300px;">
+                <figcaption>Aufbau des Hauptreaktors mit Reaktionsraum und Heizsystem</figcaption>
+              </figure>
+              <div class="hint"></div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Katalysatorzone</div>
+              <p>Die Katalysatorzone befindet sich im oder hinter dem Hauptreaktor. Das Reaktionsgas strömt durch ein Festbett, in dem weitere Crack- und Reformierungsreaktionen stattfinden. Wichtige Anforderungen sind große Oberfläche, thermische Stabilität und mechanische Festigkeit.</p>
+              <figure>
+                <img src="assets/Katalysatorzone.jpg" alt="Katalysatorzone" class="content-image" style="width:100%; max-width:300px;">
+                <figcaption>Katalysatorzone mit Festbett und Gasdurchströmung als Sekundärreaktor</figcaption>
+              </figure>
+              <div class="hint"></div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Gasstrecke</div>
+              <p>Nach dem Reaktor werden die Produkte kontrolliert abgeführt, gegebenenfalls gekühlt und in Reinigungsstufen weiterbehandelt. Ziel ist eine definierte, reproduzierbare Messstrecke mit möglichst geringer Verfälschung durch Kondensate oder Feuchtigkeit.</p>
+              <div class="hint"></div>
+            </div>
+          </div>
+
+          <div class="card wide-card">
+            <div class="wide-card-left">
+              <div class="card-title">Sicherheit und Messbarkeit</div>
+              <p>
+                Der gesamte Aufbau ist auf kontrollierte Bedingungen ausgelegt. Absolute Dichtheit, Schutzgasführung, Temperaturkontrolle, sichere Gasabführung und eine kontinuierliche Überwachung sind entscheidend. Da bereits kleine Sauerstoffmengen bei hohen Temperaturen problematisch sein können, müssen alle Bauteile auf die gewählten Betriebsbedingungen abgestimmt sein.
+              </p>
+              <ul class="list">
+                <li>Arbeiten im Abzug</li>
+                <li>Gasdichte Verbindungen und hitzebeständige Dichtungen</li>
+                <li>Kein offenes Feuer im Umfeld des Versuchs</li>
+                <li>Kontinuierliche Überwachung von Temperatur und Gasstrecke</li>
+                <li>Kontrollierte Inertgaszufuhr über Druckminderer und Durchflussregler</li>
+              </ul>
+            </div>
+            <div class="wide-card-right">
+              <figure>
+                <img src="assets/Sicherheitsdiagramm.jpg" alt="Sicherheitsdiagramm" class="content-image small">
+                <figcaption>Sicherheitsdiagramm: Sensoren, Ventile, Gasführung, Abzug</figcaption>
+              </figure>
+              <div class="hint">Sicherheitsrelevante Komponenten des ThermoH2-Systems</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="theorie">
+        <div class="container grid2">
+          <div>
+            <h2>Theorie</h2>
+            <p>
+              Pyrolyse bezeichnet die thermische Zersetzung organischer Stoffe ohne Oxidation. Im Fall von Kunststoffen bedeutet das: Die langen Polymerketten werden bei hohen Temperaturen in kleinere Moleküle aufgespalten. Je nach Material, Temperatur, Aufenthaltszeit und Reaktorführung entstehen gasförmige Kohlenwasserstoffe, Wasserstoff, mögliche Kondensatfraktionen und fester Kohlenstoff.
+            </p>
+
+            <h3>Rolle der Katalysatoren</h3>
+            <p>
+              Nickelbasierte Katalysatoren sind besonders gut für Reformierungs- und Spaltungsreaktionen geeignet. Auf der Metalloberfläche werden C–C- und C–H-Bindungen aktiviert, wodurch kleinere Moleküle und in hohem Maß Wasserstoff entstehen können. Im Projektkontext kommen unter anderem Nickel auf Aluminiumoxid, Eisenoxid auf Trägermaterial und Raney-Nickel in Betracht.
+            </p>
+
+            <h3>Typische Katalysatoren im Projektkontext</h3>
+            <ul class="list">
+              <li>Nickel auf Aluminiumoxid als klassischer Reformierungs- und Spaltungskatalysator mit großer aktiver Oberfläche</li>
+              <li>Eisenoxid auf Trägermaterial als kostengünstigere und thermisch stabile Alternative</li>
+              <li>Raney-Nickel als hochporöses, sehr reaktives Nickelmaterial mit großer innerer Oberfläche</li>
+            </ul>
+
+            <h3>Probleme und Herausforderungen</h3>
+            <p>
+              Ein zentrales Problem ist die Verkokung. Dabei lagert sich fester Kohlenstoff auf der Katalysatoroberfläche ab und blockiert aktive Zentren. Das führt zur Deaktivierung. Zusätzlich spielen thermische Stabilität, Selektivität und Empfindlichkeit gegenüber Verunreinigungen der Gasgemische eine wichtige Rolle.
+            </p>
+
+            <div class="note">
+              An dieser Stelle werden noch Kalibrierkurven, Temperaturprofile und Vergleichsdiagramme ergänzt, sobald diese vorliegen.
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Mess- und Sicherheitssystem</div>
+              <p>
+                Thermoelemente messen die Reaktortemperatur kontinuierlich. Sie liefern den entscheidenden Parameter für Produktverteilung und Wasserstoffausbeute. Zusätzlich erfasst ein MQ-8-Sensor Wasserstoff über eine temperaturabhängige Leitfähigkeitsänderung eines Metalloxid-Sensors. Die Konzentration wird über eine Kalibrierkurve bestimmt.
+              </p>
+              <p>
+                Vor und während des Versuchs wird Argon eingesetzt, um Sauerstoff auszuschließen. Druckminderer und Durchflussregler sorgen für konstante Bedingungen. Im Zusammenspiel aus Reaktor, Katalysator, Gasnachbehandlung und Messsystem entsteht so eine belastbare Datenbasis.
+              </p>
+
+              <figure>
+                <img src="assets/Temperaturfühler.jpg" alt="Temperaturfühler" class="content-image small" style="width:100%; max-width:400px;">
+                <figcaption>klassischer Hochtemperaturfühler -  Thermoelement zur kontinuierlichen Temperaturerfassung im Reaktor</figcaption>
+              </figure>
+              <div class="hint"></div>
+
+              <figure>
+                <img src="assets/mq8.png" alt="MQ-8 Wasserstoffsensor im ThermoH2 Aufbau" class="content-image small" style="width:100%; max-width:400px;">
+                <figcaption>MQ-8 Sensor zur Detektion wasserstoffhaltiger Gase im Messsystem.</figcaption>
+              </figure>
+              <div class="hint"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="experimente">
+        <div class="container">
+          <h2>Experimente</h2>
+          <p class="section-lead">
+            Die Versuchsreihen werden so geplant, dass einzelne Einflussgrößen gezielt variiert werden können. Dazu zählen Temperatur, Haltezeit, Feedstock-Zusammensetzung, Lage und Masse des Katalysators sowie Bedingungen in der Gasnachbehandlung.
+          </p>
+
+          <div class="table-wrap" role="region" aria-label="Versuchsübersicht">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Versuchsreihe</th>
+                  <th>Variablen</th>
+                  <th>Messgrößen</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>R1: Basisbetrieb</td>
+                  <td>Temperatur, Haltezeit, Feedstock</td>
+                  <td>Gasvolumen, Sensorwerte, Rückstand</td>
+                  <td><span class="pill">in Arbeit</span></td>
+                </tr>
+                <tr>
+                  <td>R2: Nickel auf Al2O3</td>
+                  <td>Katalysatormasse, Position, Temperatur</td>
+                  <td>H2-Signal, Kondensat, C-Rückstand</td>
+                  <td><span class="pill ghost">geplant</span></td>
+                </tr>
+                <tr>
+                  <td>R3: Eisenoxid auf Träger</td>
+                  <td>Trägermaterial, Aktivphase, Haltezeit</td>
+                  <td>Vergleichbarkeit, Stabilität, Selektivität</td>
+                  <td><span class="pill ghost">geplant</span></td>
+                </tr>
+                <tr>
+                  <td>R4: Raney-Nickel</td>
+                  <td>Temperaturfenster, Gaszusammensetzung</td>
+                  <td>Reaktivität, Wasserstoffbildung, Verkokung</td>
+                  <td><span class="pill ghost">geplant</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <div class="callout-title">Versuchsprotokolle und Aufbaudokumentation</div>
+            <div class="callout-body">
+              <figure>
+                <img src="assets/Tabellen.png" alt="Tabellen" class="content-image">
+                <figcaption>Ergebnistabellen (Auswahl)</figcaption>
+              </figure>
+              <div class="hint"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="ergebnisse">
+        <div class="container grid2">
+          <div>
+            <h2>Ergebnisse</h2>
+            <p>
+              Die Ergebnisse werden schrittweise veröffentlicht. Ziel ist nicht nur die Darstellung einzelner Versuchserfolge, sondern der Vergleich von Reproduzierbarkeit, Temperaturführung, Katalysatoreffekt und Produktqualität unter definierten Bedingungen.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Reproduzierbarkeit</h3>
+                <p>Wie stabil verhalten sich Temperaturprofil, Sensorwerte und Rückstände bei vergleichbaren Versuchsbedingungen, und welche baulichen Änderungen verbessern die Konstanz?</p>
+              </div>
+              <div class="mini-card">
+                <h3>Katalysator-Effekt</h3>
+                <p>Welche Unterschiede zeigen sich bei Wasserstoffsignal, Nebenproduktbildung und Koksablagerung zwischen verschiedenen Katalysatorsystemen?</p>
+              </div>
+              <div class="mini-card">
+                <h3>Produktqualität</h3>
+                <p>Bewertet werden Gasphase, eventuelle Kondensate und fester Kohlenstoff. Entscheidend ist dabei nicht nur die Menge, sondern auch die Qualität und Weiterverwendbarkeit.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card" id="download">
+              <div class="card-title">Ausarbeitung</div>
+              <p>Hier kann die vollständige Projektarbeit als PDF bereitgestellt werden.</p>
+              <a class="button primary full" href="assets/ThermoH2_Ausarbeitung.pdf" download>PDF herunterladen</a>
+              <div class="hint">Datei im assets-Ordner ablegen. Beispiel: ThermoH2_Ausarbeitung.pdf</div>
+            </div>
+
+            <div class="card">
+              <div class="card-title"></div>
+              <figure>
+                <img src="assets/Visite.jpeg" alt="Tabellen" class="">
+                <figcaption></figcaption>
+              </figure>
+              <div class="hint"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="weiterentwicklung">
+        <div class="container">
+          <h2>Mögliche Weiterentwicklung</h2>
+          <p class="section-lead">
+            Das Projekt ist bewusst als lern- und ausbaufähige Plattform angelegt. Reaktor, Katalysatorzone, Gasreinigung und Messsystem können Schritt für Schritt erweitert werden.
+          </p>
+
+          <div class="cards cols3">
+            <div class="card">
+              <div class="card-title">Skalierung und Kontinuität</div>
+              <p>Langfristig ist ein Übergang zu standardisierteren Beschickungs- und Betriebsweisen denkbar. Dazu gehören verbesserte Temperaturführung, reproduzierbare Gasströme und perspektivisch kontinuierlichere Prozesse.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Wärmeeffizienz</div>
+              <p>Ein zentrales Thema ist die thermische Effizienz des Systems. Dazu zählen bessere Isolation, optimierte Heizprofile und eine genauere Bewertung der Energiebilanz.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Analytik</div>
+              <p>Erweiterte Gasanalyse, genauere Kalibrierungen, Charakterisierung des festen Kohlenstoffs und ein noch tieferer Vergleich mit Literaturdaten würden die Aussagekraft des Projekts deutlich erhöhen.</p>
+            </div>
+          </div>
+
+          <div class="callout">
+            <div class="callout-title">Roadmap</div>
+            <div class="callout-body">
+              <figure>
+                <img src="assets/Roadmap.png" alt="Roadmap" class="content-image small">
+              </figure>
+              <div class="hint"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="labor">
+        <div class="container grid2">
+          <div>
+            <h2>Unser privates Labor</h2>
+            <p>
+              ThermoH2 entsteht nicht in einem Institutsgebäude, sondern in einem privat aufgebauten Labor. Das bedeutet Eigenleistung, technische Improvisation, konsequente Dokumentation und konkrete Investitionen in Sicherheit, Messmittel, Werkstoffe und Nachbehandlung.
+            </p>
+
+            <h3>Wofür das Labor steht</h3>
+            <ul class="list">
+              <li>Eigenbau und Iteration mit sauberer technischer Dokumentation</li>
+              <li>Fokus auf Sicherheit, Dichtheit und kontrollierte Gasführung</li>
+              <li>Messbarkeit statt bloßer Demonstration</li>
+              <li>Transparenz bei Material, Aufbau und Kosten</li>
+            </ul>
+
+            <figure>
+              <img src="assets/Labor.png" alt="Labor" class="content-image small">
+              <figcaption>Ansicht des ehemaligen Laborraums mit Arbeitsfläche und Abzug</figcaption>
+            </figure>
+            <div class="hint"></div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card" id="spenden">
+              <div class="card-title">Spenden und Unterstützung</div>
+              <p>
+                Wenn du ThermoH2 unterstützen willst, kannst du mit einer privaten Unterstützung helfen, Materialkosten, Sicherheitskomponenten und Messtechnik zu finanzieren. Wir dokumentieren transparent, wofür Mittel eingesetzt werden.
+              </p>
+
+              <div class="donation-box">
+                <div class="donation-row">
+                  <div class="donation-label">Spendenziel</div>
+                  <div class="donation-value" id="goalValue">2.000 €</div>
+                </div>
+                <div class="progress" aria-label="Spendenfortschritt">
+                  <div class="progress-bar" id="progressBar" style="width: 22%"></div>
+                </div>
+                <div class="donation-row">
+                  <div class="donation-label">Aktuell</div>
+                  <div class="donation-value" id="currentValue">560 €</div>
+                </div>
+
+                <div class="donation-actions">
+                  <button class="button primary full" type="button" id="donateOpen">
+                    Unterstützung senden
+                  </button>
+                  <button class="button ghost full" type="button" id="openCosts">Kostenübersicht ansehen</button>
+                </div>
+
+                <div class="hint">
+                  PayPal-Adresse, IBAN und Verwendungszweck können im Unterstützungsfenster hinterlegt werden.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Geräte und Sicherheit</div>
+              <figure>
+                <img src="assets/Notaus.jpg" alt="Notaus" class="content-image small">
+                <figcaption>Notaus-Schalter und Controlpanels</figcaption>
+              </figure>
+              <div class="hint"></div>
+
+              <figure>
+                <img src="assets/Sicherung.jpg" alt="Sicherung" class="content-image small">
+                <figcaption>Projekteigener Sicherungskasten mit Messabnahme</figcaption>
+              </figure>
+              <div class="hint"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="presse">
+        <div class="container grid2">
+          <div>
+            <h2>Presse und Veröffentlichungen</h2>
+            <p>
+              Hier sammeln wir Berichte, Veröffentlichungen und Medienbeiträge zum Projekt, u.a. Presseartikel, Wettbewerbsberichte, Schulveröffentlichungen oder Beiträge von Partnern.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Rheingau Echo</h3>
+                <p>Bericht über das private Labor und das ThermoH2-Projekt im Rheingau Echo</p>
+                <p><a href="https://www.rheingau-echo.de/nachrichten/region/eltville/zwei-ambitionierte-nachwuchsforscher-bringen-id100642.html" target="_blank" rel="noopener noreferrer">Artikel öffnen</a></p>
+              </div>
+
+              <div class="mini-card">
+                <h3>wiesbaden-lebt</h3>
+                <p>Artikel über den Jugend-forscht Regionalwettbewerb Hessen West</p>
+                <p><a href="https://wiesbaden-lebt.de/61-jahre-jugend-forscht-wiesbaden-kuert-seine-kluegsten-koepfe" target="_blank" rel="noopener noreferrer">Artikel öffnen</a></p>
+              </div>
+
+              <div class="mini-card">
+                <h3>wiesbadenaktuell</h3>
+                <p>Artikel über den Jugend-forscht Regionalwettbewerb Hessen West</p>
+                <p><a href="https://wiesbadenaktuell.de/2026/02/23/junge-ideen-grosse-buehne-jugend-forscht-begeistert-im-industriepark-wiesbaden/" target="_blank" rel="noopener noreferrer">Artikel öffnen</a></p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Medienmaterial</div>
+              <figure>
+                <img src="assets/Artikel.jpeg" alt="Zeitungsausschnitt" class="content-image small">
+                <figcaption>Zeitungsauschnitt aus dem Rheingau-Echo Nr. 49, 4. Dezember 2025. Abdruck mit freundlicher Genehmigung.</figcaption>
+              </figure>
+              <div class="hint"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="kontakt">
+        <div class="container grid2">
+          <div>
+            <h2>Kontakt</h2>
+            <p>
+              Wenn du Fragen zum Projekt hast, Kooperationen anbieten willst oder Unterstützung ermöglichen möchtest, schreib uns direkt.
+            </p>
+
+            <div class="card">
+              <div class="card-title">Kontaktdaten</div>
+              <ul class="list">
+                <li>Teamname: ThermoH2</li>
+                <li>E-Mail: <a href="mailto:doron@doron.info">doron@doron.info</a>, <a href="mailto:jakob@hollingshaus.de">jakob@hollingshaus.de</a></li>
+                <li>Ort: Eltville, Deutschland</li>
+              </ul>
+              <div class="hint"></div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Nachricht senden</div>
+
+              <form id="contactForm" class="form" method="POST" action="https://formspree.io/f/DEIN_FORM_ID">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">E-Mail</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+
+                <div class="field">
+                  <label for="subject">Betreff</label>
+                  <input id="subject" name="subject" type="text" required />
+                </div>
+
+                <div class="field">
+                  <label for="message">Nachricht</label>
+                  <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button class="button primary" type="submit">Senden</button>
+                  <button class="button ghost" type="button" id="mailFallback">Alternativ per E-Mail</button>
+                </div>
+
+                <p class="hint">
+                  Die Einrichtung des Kontaktormulars ist noch nicht abgeschlossen, bitte den "Alternativ per E-Mail"-Button nutzen :-)
+                </p>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">ThermoH2</div>
+          <div class="footer-sub">Jugend forscht Projekt</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#top">Nach oben</a>
+          <a href="#download">PDF</a>
+          <a href="#spenden">Spenden</a>
+          <a href="#presse">Presse</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <div>© <span id="year"></span> ThermoH2</div>
+        <div class="footer-note"></div>
+        <button id="legalOpen" class="button ghost">Impressum & Datenschutz</button>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="costModal" aria-label="Kostenübersicht">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Kostenübersicht</div>
+          <div class="modal-sub">Auflistung der ungefähren bisherige Ausgaben</div>
+        </div>
+        <button class="icon-btn" type="button" id="closeCosts" aria-label="Schließen">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cost-grid">
+          <div class="cost-item">
+            <div class="cost-name">Sensorik und Messstrecke</div>
+            <div class="cost-value">200 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Reaktor Material und Dichtungen</div>
+            <div class="cost-value">700 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Katalysatoren und Träger</div>
+            <div class="cost-value">160 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Sicherheitskomponenten</div>
+            <div class="cost-value">250 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Verbrauchsmaterial</div>
+            <div class="cost-value">250 €</div>
+          </div>
+        </div>
+
+        <div class="note">
+          ...
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="donateModal" aria-label="Unterstützung">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Unterstützung für ThermoH2</div>
+          <div class="modal-sub">Privat, ohne Spendenquittung</div>
+        </div>
+        <button class="icon-btn" type="button" id="donateClose" aria-label="Schließen">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cost-grid">
+          <div class="cost-item">
+            <div class="cost-name">PayPal</div>
+            <div class="cost-value" id="ppValue">doron@doron.info</div>
+            <button class="button ghost full" type="button" data-copy="#ppValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Überweisung</div>
+            <div class="cost-value" id="ibanValue">Jakob Immanuel Hollingshaus: DE85500319000013470731</div>
+            <button class="button ghost full" type="button" data-copy="#ibanValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Verwendungszweck</div>
+            <div class="cost-value" id="vzValue">ThermoH2 Labor</div>
+            <button class="button ghost full" type="button" data-copy="#vzValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Hinweis</div>
+            <div class="cost-value">Wir bitten um Verständnis, dass weder eine Gegenleistung erbracht wird, noch eine Spendenquittung ausgestellt werden kann.</div>
+          </div>
+        </div>
+
+        <div class="note">
+          Diese Unterstützung dient Material, Sicherheit und Messmitteln.
+        </div>
+      </div>
+    </dialog>
+    <dialog class="modal" id="legalModal">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Impressum & Datenschutz</div>
+          <div class="modal-sub">Rechtliche Angaben zur Website</div>
+        </div>
+        <button class="icon-btn" id="legalClose">✕</button>
+      </div>
+
+      <div class="modal-body">
+
+        <h3>Impressum</h3>
+        <p>
+          Angaben gemäß §5 TMG<br>
+          Jakob Hollingshaus<br>
+          Doron Antal<br>
+          Eltville, Deutschland
+        </p>
+
+       <p>
+         Kontakt:<br>
+         E-Mail: jakob@hollingshaus.de
+       </p>
+
+       <p>
+         Verantwortlich für den Inhalt nach §55 Abs.2 RStV:<br>
+         Jakob Hollingshaus
+       </p>
+
+        <h3>Datenschutzerklärung</h3>
+        <p>
+          Diese Website dient der Darstellung des Jugend-forscht-Projekts ThermoH2.
+          Beim Besuch der Seite können technische Zugriffsdaten durch den Hostinganbieter
+          (GitHub Pages) automatisch gespeichert werden.
+        </p>
+
+        <p>
+          Wenn Sie das Kontaktformular nutzen, werden die eingegebenen Daten
+          ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht
+          an Dritte weitergegeben.
+        </p>
+
+        <p>
+          Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung
+          Ihrer gespeicherten Daten.
+        </p>
+
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
