@@ -646,6 +646,42 @@ input:focus, textarea:focus{
   line-height: 1.5;
   word-break: break-word;
 }
+.img-modal{
+  display:none;
+  position:fixed;
+  z-index:1000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.85);
+  align-items:center;
+  justify-content:center;
+}
+
+.img-modal-content{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+.img-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:32px;
+  color:white;
+  cursor:pointer;
+}
+
+.zoomable{
+  cursor:zoom-in;
+  transition:transform 0.2s ease;
+}
+
+.zoomable:hover{
+  transform:scale(1.03);
+}
 
 @media (max-width: 980px){
   .hero{ grid-template-columns: 1fr; }
@@ -701,4 +737,5 @@ input:focus, textarea:focus{
   .card{ padding: 14px; }
   .button{ width: 100%; }
   .form-actions{ flex-direction: column; }
+
 }
