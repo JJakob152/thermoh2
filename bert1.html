@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BERT 1 | ThermoH2</title>
+    <meta name="description" content="BERT 1: Der Batch-Reaktor des ThermoH2-Projekts." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+
+  <body class="page-light page-reactor">
+    <a class="skip" href="#main">Zum Inhalt</a>
+
+    <header class="page-hero" id="top">
+      <div class="container page-hero-inner">
+        <div>
+          <p class="kicker">Reaktorplattform</p>
+          <h1>BERT 1: Batch-Reaktor</h1>
+          <p class="lead">BERT 1 ist die experimentelle Grundlage von ThermoH2: ein Batch-System für Pyrolyseversuche mit Kunststoffgemischen, Schutzgasführung, Katalysatorzone, Gasreinigung und Sensorik.</p>
+          <div class="page-nav">
+            <a class="button ghost" href="index.html">Startseite</a>
+            <a class="button ghost" href="news.html">News</a>
+            <a class="button primary" href="bert2.html">Zu BERT 2</a>
+          </div>
+        </div>
+        <div class="page-hero-media">
+          <img src="assets/Aufbau.png" alt="Aufbau von BERT 1" class="zoomable" />
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container grid2">
+          <div>
+            <h2>Wozu BERT 1 dient</h2>
+            <p>BERT 1 erlaubt Grundlagenversuche unter definierten Bedingungen. Kunststoffproben werden portionsweise in einer geschlossenen Reaktionskammer erhitzt, während Sauerstoff durch Schutzgas verdrängt wird. So lassen sich Temperaturführung, Materialverhalten und Gasbildung nachvollziehbar dokumentieren.</p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Batch-Prinzip</h3>
+                <p>Jeder Versuch ist ein abgeschlossener Durchlauf mit definierter Probe, Temperaturführung und Versuchsdauer.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Katalysatorzone</h3>
+                <p>Die entstehenden Kohlenwasserstoffe können über verschiedene Katalysatoren geführt werden, um den Wasserstoffanteil zu beeinflussen.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Messstrecke</h3>
+                <p>Temperaturen, Gasreinigung und Wasserstoffsensorik bilden die Grundlage für vergleichbare Versuchsdaten.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Bilder</div>
+              <figure>
+                <img src="assets/Reaktorkern.jpg" alt="Reaktorkern" class="content-image small zoomable">
+                <figcaption>Reaktorkern</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/Katalysatorzone.jpg" alt="Katalysatorzone" class="content-image small zoomable">
+                <figcaption>Katalysatorzone</figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2>Prozessschema und Aufbau</h2>
+          <p class="section-lead">
+            BERT 1 verbindet Hauptreaktor, Katalysatorzone, Gasreinigung und Messsystem zu einer kontrollierten Batch-Strecke. Das Prozessschema zeigt die Grundlogik, der Aufbau darunter die wichtigsten Baugruppen.
+          </p>
+
+          <div class="callout">
+            <div class="callout-title">Prozessschema</div>
+            <div class="callout-body">
+              <figure>
+                <img src="assets/Schema.png" alt="Prozessdiagramm und Reaktionsschema" class="schema diagram zoomable">
+                <figcaption>Feedstock, Hauptreaktor, Katalysatorzone, Gasreinigung, Messsystem</figcaption>
+              </figure>
+              <div class="hint">Vereinfachtes Fließbild des ThermoH2-Systems mit Reaktions- und Messstrecke.</div>
+            </div>
+          </div>
+
+          <div class="cards cols3">
+            <div class="card">
+              <div class="card-title">Reaktorkern</div>
+              <p>Im Hauptreaktor wird das Kunststoffmaterial unter Sauerstoffausschluss auf hohe Temperaturen erhitzt. Die Polymerketten zerfallen dabei thermisch in kleinere Moleküle. Die Dichtheit des Reaktionsraums ist zentral, da schon geringe Sauerstoffmengen zu unerwünschter Oxidation führen können.</p>
+              <figure>
+                <img src="assets/Reaktorkern.jpg" alt="Reaktorkern" class="content-image small zoomable" style="width:100%; max-width:300px;">
+                <figcaption>Aufbau des Hauptreaktors mit Reaktionsraum und Heizsystem</figcaption>
+              </figure>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Katalysatorzone</div>
+              <p>Die Katalysatorzone befindet sich im oder hinter dem Hauptreaktor. Das Reaktionsgas strömt durch ein Festbett, in dem weitere Spaltungs- und Reformierungsreaktionen stattfinden. Wichtige Anforderungen sind eine große Oberfläche, thermische Stabilität und mechanische Festigkeit.</p>
+              <figure>
+                <img src="assets/Katalysatorzone.jpg" alt="Katalysatorzone" class="content-image small zoomable" style="width:100%; max-width:300px;">
+                <figcaption>Katalysatorzone mit Festbett und Gasdurchströmung als Sekundärreaktor</figcaption>
+              </figure>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Gasstrecke</div>
+              <p>Nach dem Reaktor werden die Produkte kontrolliert abgeführt, gegebenenfalls gekühlt und in Reinigungsstufen weiterbehandelt. Ziel ist eine definierte, reproduzierbare Messstrecke mit möglichst geringer Verfälschung durch Kondensate oder Feuchtigkeit.</p>
+            </div>
+          </div>
+
+          <div class="card wide-card">
+            <div class="wide-card-left">
+              <div class="card-title">Sicherheit und Messbarkeit</div>
+              <p>
+                Der gesamte Aufbau ist auf kontrollierte Bedingungen ausgelegt. Dichtheit, Schutzgasführung, Temperaturkontrolle, sichere Gasabführung und kontinuierliche Überwachung sind entscheidend.
+              </p>
+              <ul class="list">
+                <li>Arbeiten im Abzug</li>
+                <li>Gasdichte Verbindungen und hitzebeständige Dichtungen</li>
+                <li>Kein offenes Feuer im Umfeld des Versuchs</li>
+                <li>Kontinuierliche Überwachung von Temperatur und Gasstrecke</li>
+                <li>Kontrollierte Inertgaszufuhr über Druckminderer und Durchflussregler</li>
+              </ul>
+            </div>
+            <div class="wide-card-right">
+              <figure>
+                <img src="assets/Sicherheitsdiagramm.jpg" alt="Sicherheitsdiagramm" class="content-image small zoomable">
+                <figcaption>Sicherheitsdiagramm: Sensoren, Ventile, Gasführung, Abzug</figcaption>
+              </figure>
+              <div class="hint">Sicherheitsrelevante Komponenten des ThermoH2-Systems</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid2">
+          <div>
+            <h2>Reaktionsgrundlagen und Katalyse</h2>
+            <p>
+              Bei der Pyrolyse werden lange Polymerketten ohne Sauerstoffzufuhr thermisch in kleinere Moleküle gespalten. Materialart, Temperatur, Verweilzeit und Reaktorführung beeinflussen, wie sich Gasphase, Kondensate und fester Rückstand zusammensetzen.
+            </p>
+
+            <h3>Rolle der Katalysatoren</h3>
+            <p>
+              Nickel- und eisenbasierte Katalysatoren unterstützen Spaltungs- und Reformierungsreaktionen. Untersucht werden unter anderem Nickel auf Aluminiumoxid, Eisenoxid auf Trägermaterial und Raney-Nickel.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Aktive Oberfläche</h3>
+                <p>Eine große zugängliche Oberfläche schafft viele Reaktionszentren für die Umsetzung der Pyrolysegase.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Temperaturstabilität</h3>
+                <p>Der Katalysator muss den hohen Temperaturen und wechselnden Gaszusammensetzungen standhalten.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Verkokung</h3>
+                <p>Kohlenstoffablagerungen können aktive Zentren blockieren und die Wirkung des Katalysators verringern.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Messsystem</div>
+              <p>Thermoelemente erfassen die Temperatur im Reaktor. Ein MQ-8-Sensor dient als zusätzlicher Nachweis für wasserstoffhaltige Gase; Durchfluss- und Druckregelung stabilisieren die Versuchsbedingungen.</p>
+              <figure>
+                <img src="assets/Temperaturfühler.jpg" alt="Hochtemperatur-Thermoelement" class="content-image small zoomable">
+                <figcaption>Hochtemperatur-Thermoelement zur kontinuierlichen Temperaturerfassung</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/mq8.png" alt="MQ-8-Wasserstoffsensor im ThermoH2-Aufbau" class="content-image small zoomable">
+                <figcaption>MQ-8-Sensor zum Nachweis wasserstoffhaltiger Gase</figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Versuchslogik</h2>
+          <div class="flow">
+            <div class="flow-step">
+              <div class="flow-num">1</div>
+              <div class="flow-body">
+                <h3>Probe vorbereiten</h3>
+                <p>Masse, Materialart und Vorbehandlung werden dokumentiert.</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-num">2</div>
+              <div class="flow-body">
+                <h3>Reaktor inertisieren</h3>
+                <p>Das System wird mit Argon gespült, um Sauerstoff zu entfernen.</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-num">3</div>
+              <div class="flow-body">
+                <h3>Pyrolyse durchführen</h3>
+                <p>Die Probe wird erhitzt, thermisch zersetzt und die Gasphase nachbehandelt.</p>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-num">4</div>
+              <div class="flow-body">
+                <h3>Auswerten</h3>
+                <p>Sensorwerte, Rückstände, Kondensate und Beobachtungen werden verglichen.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3>Versuchsreihen mit BERT 1</h3>
+          <p class="section-lead">Für vergleichbare Versuche wird jeweils nur eine begrenzte Zahl von Einflussgrößen verändert. Dokumentiert werden Material, Temperaturprofil, Haltezeit, Katalysator und beobachtete Produkte.</p>
+
+          <div class="table-wrap" role="region" aria-label="Versuchsübersicht BERT 1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Versuchsreihe</th>
+                  <th>Variablen</th>
+                  <th>Auswertung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Basisbetrieb</td>
+                  <td>Temperatur, Haltezeit, Kunststoffprobe</td>
+                  <td>Gasvolumen, Sensorwerte, Rückstand</td>
+                </tr>
+                <tr>
+                  <td>Nickel auf Aluminiumoxid</td>
+                  <td>Katalysatormasse, Position, Temperatur</td>
+                  <td>H₂-Signal, Kondensate, Kohlenstoffrückstand</td>
+                </tr>
+                <tr>
+                  <td>Eisenoxid auf Träger</td>
+                  <td>Trägermaterial, Aktivphase, Haltezeit</td>
+                  <td>Stabilität, Vergleichbarkeit, Gasbildung</td>
+                </tr>
+                <tr>
+                  <td>Raney-Nickel</td>
+                  <td>Temperaturfenster, Gaszusammensetzung</td>
+                  <td>Reaktivität, Wasserstoffbildung, Verkokung</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <div class="callout-title">Versuchsprotokolle</div>
+            <div class="callout-body">
+              <figure>
+                <img src="assets/Tabellen.png" alt="Auszug aus den ThermoH2-Versuchsprotokollen" class="content-image zoomable">
+                <figcaption>Dokumentation von Messwerten und Versuchsbedingungen</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="reactor-links">
+            <a class="reactor-link-card" href="index.html#konzept">
+              <div class="card-title">Konzept auf der Startseite</div>
+              <p>Zurück zum übergeordneten ThermoH2-Konzept.</p>
+            </a>
+            <a class="reactor-link-card" href="bert2.html">
+              <div class="card-title">Nächste Stufe</div>
+              <p>BERT 2 als Durchlaufreaktor kennenlernen.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-block">
+          <div class="footer-brand">ThermoH2</div>
+          <div class="footer-sub">Jugend-forscht-Projekt</div>
+          <div class="footer-counter"><span id="visitorCount">---</span></div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Startseite</a>
+          <a href="news.html">News</a>
+          <a href="bert2.html">BERT 2</a>
+          <a class="social-link" href="https://www.instagram.com/thermoh2_bert?igsh=MXZ2dWZjcm9sb3poZw==" target="_blank" rel="noopener noreferrer" aria-label="ThermoH2 auf Instagram öffnen">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1.1"></circle>
+            </svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <div>© <span id="year"></span> ThermoH2</div>
+      </div>
+    </footer>
+
+    <div id="imageModal" class="img-modal">
+      <span class="img-close">&times;</span>
+      <img class="img-modal-content" id="imgModalContent">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

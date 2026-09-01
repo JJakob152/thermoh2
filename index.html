@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ThermoH2 | Jugend forscht</title>
+    <meta name="description" content="ThermoH2: Katalytische Hochtemperatur-Pyrolyse gemischter Kunststoffe zur Erzeugung von Wasserstoff und festem Kohlenstoff. Projektüberblick, Ergebnisse, Reaktoren, Presse und Kontakt." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+
+  <body>
+    <div id="cookieBanner" class="cookie-banner">
+      <div class="cookie-content">
+        <div>
+          <strong>Datenschutz-Hinweis</strong>
+          <p>
+           Diese Website verwendet einen externen Besucherzähler. Dabei können technische Verbindungsdaten verarbeitet werden.
+            Die Erfassung dient nur der Anzeige der Gesamtzahl der Seitenaufrufe.
+          </p>
+        </div>
+
+        <div class="cookie-buttons">
+          <button id="acceptCounter" class="button primary" type="button">
+           Akzeptieren
+          </button>
+          <button id="declineCounter" class="button ghost" type="button">
+           Ablehnen
+          </button>
+        </div>
+      </div>
+    </div>
+    <a class="skip" href="#main">Zum Inhalt</a>
+
+    <section class="top-campaign" aria-label="Tausch doch">
+      <div class="container top-campaign-inner">
+        <div>
+          <strong>Tausch doch</strong>
+          <span>Nachhaltig tauschen statt neu kaufen: Die Onlineplattform verlängert Produktlebenszyklen, vermeidet CO₂-Emissionen und unterstützt weitere Forschung.</span>
+        </div>
+        <button class="chip" type="button" data-news-open="tauschdoch">Mehr erfahren</button>
+      </div>
+    </section>
+
+    <div class="site-nav-sticky" id="top">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="ThermoH2 Start">
+          <img src="assets/TH2.png" alt="ThermoH2 Logo" class="brand-logo" />
+          <span class="brand-text">
+            <span class="brand-name">ThermoH2</span>
+            <span class="brand-sub">Jugend-forscht-Projekt</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navlinks">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <nav class="nav-shell" aria-label="Hauptnavigation">
+          <div class="navlinks nav-main" id="navlinks">
+            <a href="#news">News</a>
+            <a href="#projekt">Projekt</a>
+            <a href="#konzept">Konzept</a>
+            <a href="#ergebnisse">Ergebnisse</a>
+            <a href="bert1.html">BERT 1</a>
+            <a href="bert2.html">BERT 2</a>
+            <a href="#kontakt">Kontakt</a>
+            <a class="cta" href="#spenden">Spenden</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container hero">
+        <div class="hero-left">
+          <p class="kicker">Katalytische Hochtemperatur-Pyrolyse</p>
+          <h1>Wasserstoff aus Mischkunststoffen. Messbar, sicher, iterativ.</h1>
+          <p class="lead">
+            ThermoH2 untersucht, wie sich schwer recycelbare Kunststoffgemische unter Sauerstoffausschluss in ein wasserstoffreiches Gas und festen Kohlenstoff umwandeln lassen. Dafür entwickeln wir Reaktoren, Katalysatorstrecken und ein eigenes Mess- und Sicherheitssystem.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#konzept">Projektüberblick</a>
+            <a class="button ghost" href="#download">Ausarbeitung herunterladen</a>
+          </div>
+
+          <div class="hero-facts" role="list">
+            <div class="fact" role="listitem">
+              <div class="fact-top">Reaktor</div>
+              <div class="fact-bottom">BERT 1 und BERT 2</div>
+            </div>
+            <div class="fact" role="listitem">
+              <div class="fact-top">Zielprodukte</div>
+              <div class="fact-bottom">H₂ und fester Kohlenstoff</div>
+            </div>
+            <div class="fact" role="listitem">
+              <div class="fact-top">Schwerpunkte</div>
+              <div class="fact-bottom">Katalyse, Gasreinigung, Sicherheit</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card media-card">
+            <div class="card-head">
+              <div>
+                <div class="card-title">Projektfilm</div>
+                <div class="card-sub">ThermoH2 in Bewegung</div>
+              </div>
+            </div>
+
+            <div class="video-wrap" data-mode="file" id="videoWrap">
+              <video class="video" controls preload="metadata" poster="assets/hero-poster.jpg">
+                <source src="assets/thermoh2.mp4" type="video/mp4" />
+                Dein Browser unterstützt das Video-Tag nicht.
+              </video>
+            </div>
+
+            <div class="hint">
+              
+            </div>
+          </div>
+
+          <div class="card image-card">
+            <figure>
+              <img src="assets/jufo.jpg" alt="ThermoH2 bei Jugend forscht" class="hero-image zoomable" />
+              <figcaption class="hint">ThermoH2 bei Jugend forscht. Foto: InfraServ, 2026. Verwendung mit freundlicher Genehmigung.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section news-section" id="news" aria-labelledby="newsTitle">
+        <div class="container">
+          <div class="news-head">
+            <div>
+              <p class="kicker">News &amp; Updates</p>
+              <h2 id="newsTitle">Aktuelles aus dem Projekt</h2>
+            </div>
+            <p class="section-lead">
+              Kurze Einblicke in die wichtigsten Stationen. Die Einträge öffnen sich direkt als Beitrag; alle Updates gibt es gesammelt auf einer eigenen Seite.
+            </p>
+          </div>
+
+          <div class="news-preview-row" aria-label="Aktuelle News">
+            <button class="news-preview-card" type="button" data-news-open="bruessel">
+              <img src="assets/Brüssel.JPG" alt="ThermoH2 beim Ausflug nach Brüssel" data-fallback-image>
+              <span class="news-preview-body">
+                <span class="news-label">Neuestes Update</span>
+                <strong>Ausflug nach Brüssel</strong>
+                <span>Projektvorstellung, Austausch und europäische Perspektiven.</span>
+              </span>
+            </button>
+            <button class="news-preview-card" type="button" data-news-open="tauschdoch">
+              <img src="assets/tausch_doch_logo.png" alt="Logo des Start-ups Tausch doch" class="news-preview-logo" data-fallback-image>
+              <span class="news-preview-body">
+                <span class="news-label">Start-up</span>
+                <strong>Tausch doch</strong>
+                <span>Eine nachhaltige Onlineplattform für Tauschen statt Neukaufen.</span>
+              </span>
+            </button>
+            <button class="news-preview-card" type="button" data-news-open="bert2">
+              <img src="assets/Bert2.jpg" alt="BERT 2 Reaktor" data-fallback-image>
+              <span class="news-preview-body">
+                <span class="news-label">Entwicklung</span>
+                <strong>BERT 2</strong>
+                <span>Die Entwicklung führt vom Batch- zum Durchlaufreaktor.</span>
+              </span>
+            </button>
+            <button class="news-preview-card" type="button" data-news-open="laborumzug">
+              <img src="assets/Labor.png" alt="Laborbereich von ThermoH2" data-fallback-image>
+              <span class="news-preview-body">
+                <span class="news-label">Ältester Eintrag</span>
+                <strong>Laborumzug</strong>
+                <span>Neuer Platz für Aufbau, Messstrecke und Dokumentation.</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="news-actions">
+            <a class="button primary" href="news.html">Alle anzeigen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projekt">
+        <div class="container grid2">
+          <div>
+            <h2>Vom Abfall zum Energieträger</h2>
+            <p>
+              ThermoH2 verbindet Abfallverwertung, Wasserstoffgewinnung und experimentelle Verfahrenstechnik. Im Mittelpunkt steht ein kontrolliertes Gesamtsystem, das sich messen, vergleichen und schrittweise weiterentwickeln lässt.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Problem</h3>
+                <p>Mischkunststoffe, Verbunde und stark verunreinigte Kunststoffströme sind mechanisch oft nur schwer oder gar nicht hochwertig recycelbar. Sortierung, Additive und Materialkombinationen begrenzen klassische Verfahren deutlich.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Ansatz</h3>
+                <p>Thermische Zersetzung unter Sauerstoffausschluss, kombiniert mit Katalyse, Gasreinigung und Sensorik.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Nutzen</h3>
+                <p>Neben einem wasserstoffhaltigen Gas entsteht fester Kohlenstoff. Beide Stoffströme werden erfasst und bewertet.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Auf einen Blick</div>
+              <ul class="list">
+                <li>Ausgangsstoff: schwer recycelbare Kunststoffgemische</li>
+                <li>Verfahren: Pyrolyse unter Schutzgas</li>
+                <li>Zielprodukte: wasserstoffreiches Gas und fester Kohlenstoff</li>
+                <li>Entwicklung: vom ersten Provisorium über BERT 1 bis BERT 2</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Projektbilder</div>
+              <figure>
+                <img src="assets/Aufbau.png" alt="Reaktoraufbau" class="content-image small zoomable">
+                <figcaption>Reaktoraufbau</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/Katalysator.jpg" alt="Katalysatorherstellung" class="content-image small zoomable">
+                <figcaption>Katalysatorherstellung</figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section alt" id="konzept">
+        <div class="container">
+          <h2>Konzept</h2>
+          <p class="section-lead">
+            Das Grundprinzip von ThermoH2 ist die thermische Spaltung von Kunststoffabfällen unter Sauerstoffausschluss. Die Polymere werden in einer geschlossenen Reaktionskammer auf hohe Temperaturen erhitzt, dabei in kleinere Moleküle zerlegt und anschließend in einer Katalysatorzone sowie in der Gasnachbehandlung weiter beeinflusst.
+          </p>
+
+          <div class="flow">
+            <div class="flow-step">
+              <div class="flow-num">1</div>
+              <div class="flow-body">
+                <h3>Materialauswahl</h3>
+                <p>Gemischte und schwer trennbare Kunststoffe werden vorbereitet und dokumentiert.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">2</div>
+              <div class="flow-body">
+                <h3>Pyrolyse im Hauptreaktor</h3>
+                <p>Unter Schutzgas werden die Polymerketten thermisch in kleinere Moleküle zerlegt.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">3</div>
+              <div class="flow-body">
+                <h3>Katalytische Nachbehandlung</h3>
+                <p>Eine nachgeschaltete Katalysatorzone beeinflusst die Gaszusammensetzung und unterstützt die Wasserstoffbildung.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">4</div>
+              <div class="flow-body">
+                <h3>Gasreinigung und Messung</h3>
+                <p>Die Produkte werden gereinigt und über Temperatur-, Durchfluss- und Gassensorik ausgewertet.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section alt" id="ergebnisse">
+        <div class="container grid2">
+          <div>
+            <h2>Ergebnisse</h2>
+            <p>
+              Aus dem ersten Provisorium ist eine eigene Reaktorplattform mit Gasreinigung, Katalysatorstrecke und Messtechnik entstanden. Die bisherigen Arbeiten bilden die Grundlage für reproduzierbarere Versuche und die Weiterentwicklung zu BERT 2.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Reaktoren entwickelt</h3>
+                <p>Der Aufbau wurde vom ersten Versuchsreaktor über BERT 1 bis zum Durchlaufkonzept BERT 2 weiterentwickelt.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Wasserstoff nachgewiesen</h3>
+                <p>Im Versuchsaufbau wurde wasserstoffhaltiges Gas erzeugt und mit der vorhandenen Sensorik nachgewiesen.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Messsystem aufgebaut</h3>
+                <p>Temperatur-, Durchfluss- und Gassensorik ermöglichen eine strukturierte Dokumentation der Versuche.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card" id="download">
+              <div class="card-title">Ausarbeitung</div>
+              <p>Die vollständige Projektarbeit steht als PDF zum Download bereit.</p>
+              <a class="button primary full" href="assets/ThermoH2_Ausarbeitung.pdf" download>PDF herunterladen</a>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Projektteam</div>
+              <figure>
+                <img src="assets/Visite.jpeg" alt="ThermoH2-Teamkarte von Doron Antal und Jakob Hollingshaus" class="zoomable">
+                <figcaption>Doron Antal und Jakob Hollingshaus</figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="weiterentwicklung">
+        <div class="container">
+          <h2>Entwicklung der Reaktoren</h2>
+          <p class="section-lead">
+            Jede Entwicklungsstufe löst ein konkretes Problem und liefert Erkenntnisse für den nächsten Aufbau. Die technischen Details sind auf den jeweiligen Reaktorseiten dokumentiert.
+          </p>
+
+          <div class="cards cols3">
+            <div class="card">
+              <div class="card-title">1 · Provisorium</div>
+              <p>Ein erster Feuerzement-Aufbau machte die grundlegende Reaktion sichtbar und zeigte zugleich die Grenzen bei Dichtheit, Sicherheit und Messbarkeit.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">2 · BERT 1</div>
+              <p>Der zweistufige Batch-Reaktor verbindet Hauptreaktor, Katalysatorzone, Gasreinigung und Messstrecke.</p>
+              <p><a href="bert1.html">BERT 1 im Detail</a></p>
+            </div>
+            <div class="card">
+              <div class="card-title">3 · BERT 2</div>
+              <p>Der Durchlaufreaktor soll Materialeintrag, Temperaturführung und Gasstrom gleichmäßiger und kontinuierlicher machen.</p>
+              <p><a href="bert2.html">BERT 2 im Detail</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="labor">
+        <div class="container grid2">
+          <div>
+            <h2>Unser privates Labor</h2>
+            <p>
+              ThermoH2 entsteht in einem privat aufgebauten Labor. Eigenbau, dokumentierte Versuche und Investitionen in Sicherheit und Messtechnik machen die unabhängige Projektarbeit möglich.
+            </p>
+
+            <h3>Wofür das Labor steht</h3>
+            <ul class="list">
+              <li>Eigenbau und Iteration mit sauberer technischer Dokumentation</li>
+              <li>Fokus auf Sicherheit, Dichtheit und kontrollierte Gasführung</li>
+              <li>Messbarkeit statt bloßer Demonstration</li>
+              <li>Transparenz bei Material, Aufbau und Kosten</li>
+            </ul>
+
+            <figure>
+              <img src="assets/Labor.png" alt="Labor" class="content-image small zoomable">
+              <figcaption>Laborbereich mit Arbeitsfläche, Abzug und Reaktorstrecke</figcaption>
+            </figure>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card" id="spenden">
+              <div class="card-title">Spenden und Unterstützung</div>
+              <p>
+                Wenn du ThermoH2 unterstützen willst, kannst du mit einer privaten Unterstützung helfen, Materialkosten, Sicherheitskomponenten und Messtechnik zu finanzieren. Wir dokumentieren transparent, wofür Mittel eingesetzt werden.
+              </p>
+
+              <div class="donation-box">
+                <div class="donation-row">
+                  <div class="donation-label">Spendenziel</div>
+                  <div class="donation-value" id="goalValue">2.000 €</div>
+                </div>
+                <div class="progress" aria-label="Spendenfortschritt">
+                  <div class="progress-bar" id="progressBar" style="width: 22%"></div>
+                </div>
+                <div class="donation-row">
+                  <div class="donation-label">Aktuell</div>
+                  <div class="donation-value" id="currentValue">560 €</div>
+                </div>
+
+                <div class="donation-actions">
+                  <button class="button primary full" type="button" id="donateOpen">
+                    Unterstützung senden
+                  </button>
+                  <button class="button ghost full" type="button" id="openCosts">Kostenübersicht ansehen</button>
+                </div>
+
+                <div class="hint">
+                  Zahlungsdaten und Verwendungszweck werden im Unterstützungsfenster angezeigt.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Geräte und Sicherheit</div>
+              <figure>
+                <img src="assets/Notaus.jpg" alt="Notaus" class="content-image small zoomable">
+                <figcaption>Not-Aus-Schalter und Bedienelemente</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/Sicherung.jpg" alt="Sicherung" class="content-image small zoomable">
+                <figcaption>Projekteigener Sicherungskasten für Reaktor und Messstrecke</figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="presse">
+        <div class="container grid2">
+          <div>
+            <h2>Presse und Veröffentlichungen</h2>
+            <p>
+              Eine Auswahl an Presseberichten und Veröffentlichungen über ThermoH2 und die Teilnahme am Jugend-forscht-Regionalwettbewerb.
+            </p>
+
+            <div class="cards">
+              <div class="mini-card">
+                <h3>Rheingau Echo</h3>
+                <p>Bericht über das private Labor und das ThermoH2-Projekt.</p>
+                <p><a href="https://www.rheingau-echo.de/nachrichten/region/eltville/zwei-ambitionierte-nachwuchsforscher-bringen-id100642.html" target="_blank" rel="noopener noreferrer">Artikel öffnen</a></p>
+              </div>
+
+              <div class="mini-card">
+                <h3>wiesbaden-lebt</h3>
+                <p>Bericht über den Jugend-forscht-Regionalwettbewerb Hessen West.</p>
+                <p><a href="https://wiesbaden-lebt.de/61-jahre-jugend-forscht-wiesbaden-kuert-seine-kluegsten-koepfe" target="_blank" rel="noopener noreferrer">Artikel öffnen</a></p>
+              </div>
+
+              <div class="mini-card">
+                <h3>wiesbadenaktuell</h3>
+                <p>Bericht über den Jugend-forscht-Regionalwettbewerb Hessen West.</p>
+                <p><a href="https://wiesbadenaktuell.de/2026/02/23/junge-ideen-grosse-buehne-jugend-forscht-begeistert-im-industriepark-wiesbaden/" target="_blank" rel="noopener noreferrer">Artikel öffnen</a></p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Medienmaterial</div>
+              <figure>
+                <img src="assets/Artikel.jpeg" alt="Zeitungsausschnitt" class="content-image small zoomable">
+                <figcaption>Zeitungsauschnitt aus dem Rheingau-Echo Nr. 49, 4. Dezember 2025. Abdruck mit freundlicher Genehmigung.</figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="kontakt">
+        <div class="container grid2">
+          <div>
+            <h2>Kontakt</h2>
+            <p>
+              Wenn du Fragen zum Projekt hast, Kooperationen anbieten willst oder Unterstützung ermöglichen möchtest, schreib uns direkt.
+            </p>
+
+            <div class="card">
+              <div class="card-title">Kontaktdaten</div>
+              <ul class="list">
+                <li>Teamname: ThermoH2</li>
+                <li>E-Mail: <a href="mailto:doron@doron.info">doron@doron.info</a>, <a href="mailto:jakob@hollingshaus.de">jakob@hollingshaus.de</a></li>
+                <li>Ort: Eltville, Deutschland</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card">
+              <div class="card-title">Direkt schreiben</div>
+              <p>Für Fragen, Kooperationen und Presseanfragen sind wir per E-Mail erreichbar.</p>
+              <div class="form-actions">
+                <a class="button primary" href="mailto:doron@doron.info?cc=jakob@hollingshaus.de&amp;subject=ThermoH2%20Anfrage">E-Mail verfassen</a>
+                <a class="button ghost" href="https://www.instagram.com/thermoh2_bert?igsh=MXZ2dWZjcm9sb3poZw==" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-block">
+          <div class="footer-brand">ThermoH2</div>
+          <div class="footer-sub">Jugend-forscht-Projekt</div>
+          <div class="footer-counter"><span id="visitorCount">---</span></div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#top">Nach oben</a>
+          <a href="news.html">News</a>
+          <a href="bert1.html">BERT 1</a>
+          <a href="bert2.html">BERT 2</a>
+          <a href="#download">PDF</a>
+          <a href="#spenden">Spenden</a>
+          <a href="#presse">Presse</a>
+          <a href="#kontakt">Kontakt</a>
+          <a class="social-link" href="https://www.instagram.com/thermoh2_bert?igsh=MXZ2dWZjcm9sb3poZw==" target="_blank" rel="noopener noreferrer" aria-label="ThermoH2 auf Instagram öffnen">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1.1"></circle>
+            </svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <div>© <span id="year"></span> ThermoH2</div>
+        <div class="footer-note">Jugend-forscht-Projekt aus Eltville</div>
+        <button id="legalOpen" class="button ghost">Impressum & Datenschutz</button>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="costModal" aria-label="Kostenübersicht">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Kostenübersicht</div>
+          <div class="modal-sub">Ungefähre bisherige Ausgaben</div>
+        </div>
+        <button class="icon-btn" type="button" id="closeCosts" aria-label="Schließen">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cost-grid">
+          <div class="cost-item">
+            <div class="cost-name">Sensorik und Messstrecke</div>
+            <div class="cost-value">200 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Reaktormaterial und Dichtungen</div>
+            <div class="cost-value">700 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Katalysatoren und Träger</div>
+            <div class="cost-value">160 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Sicherheitskomponenten</div>
+            <div class="cost-value">250 €</div>
+          </div>
+          <div class="cost-item">
+            <div class="cost-name">Verbrauchsmaterial</div>
+            <div class="cost-value">250 €</div>
+          </div>
+        </div>
+
+        <div class="note">Die Beträge sind gerundet und dienen der transparenten Einordnung der Projektkosten.</div>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="donateModal" aria-label="Unterstützung">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Unterstützung für ThermoH2</div>
+          <div class="modal-sub">Privat, ohne Spendenquittung</div>
+        </div>
+        <button class="icon-btn" type="button" id="donateClose" aria-label="Schließen">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cost-grid">
+          <div class="cost-item">
+            <div class="cost-name">PayPal</div>
+            <div class="cost-value" id="ppValue">doronantal@gmail.com</div>
+            <button class="button ghost full" type="button" data-copy="#ppValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Überweisung</div>
+            <div class="cost-value" id="ibanValue">Jakob Immanuel Hollingshaus: DE85500319000013470731</div>
+            <button class="button ghost full" type="button" data-copy="#ibanValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Verwendungszweck</div>
+            <div class="cost-value" id="vzValue">ThermoH2 Labor</div>
+            <button class="button ghost full" type="button" data-copy="#vzValue">Kopieren</button>
+          </div>
+
+          <div class="cost-item">
+            <div class="cost-name">Hinweis</div>
+            <div class="cost-value">Wir bitten um Verständnis, dass weder eine Gegenleistung erbracht wird, noch eine Spendenquittung ausgestellt werden kann.</div>
+          </div>
+        </div>
+
+        <div class="note">
+          Diese Unterstützung dient Material, Sicherheit und Messmitteln.
+        </div>
+      </div>
+    </dialog>
+    <dialog class="modal" id="legalModal">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Impressum & Datenschutz</div>
+          <div class="modal-sub">Rechtliche Angaben zur Website</div>
+        </div>
+        <button class="icon-btn" id="legalClose">✕</button>
+      </div>
+
+      <div class="modal-body">
+
+        <h3>Impressum</h3>
+        <p>
+          Angaben gemäß § 5 DDG<br>
+          Jakob Hollingshaus<br>
+          Doron Antal<br>
+          Eltville, Deutschland
+        </p>
+
+       <p>
+         Kontakt:<br>
+         E-Mail: jakob@hollingshaus.de
+       </p>
+
+       <p>
+         Verantwortlich für journalistisch-redaktionelle Inhalte gemäß § 18 Abs. 2 MStV:<br>
+         Jakob Hollingshaus
+       </p>
+
+        <h3>Datenschutzerklärung</h3>
+        <p>
+          Diese Website dient der Darstellung des Jugend-forscht-Projekts ThermoH2.
+          Beim Besuch der Seite können technische Zugriffsdaten durch den Hostinganbieter
+          (GitHub Pages) automatisch gespeichert werden.
+        </p>
+
+        <p>
+          Wenn Sie per E-Mail Kontakt aufnehmen, werden die übermittelten Daten
+          ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
+        </p>
+
+        <p>
+          Der externe Besucherzähler von VisitorBadge.io wird erst nach Ihrer Einwilligung geladen.
+          Dabei können technische Verbindungsdaten an den Zählerdienst übermittelt werden.
+          Bei einer Ablehnung wird keine Anfrage an den Dienst gesendet.
+        </p>
+
+        <p>
+          Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung
+          Ihrer gespeicherten Daten.
+        </p>
+
+      </div>
+    </dialog>
+
+    <dialog class="modal news-modal" id="newsModal" aria-label="News Beitrag">
+      <div class="modal-head">
+        <div>
+          <div class="modal-sub" id="newsModalMeta">News</div>
+          <div class="modal-title" id="newsModalTitle">Beitrag</div>
+        </div>
+        <button class="icon-btn" type="button" id="newsModalClose" aria-label="Schließen">✕</button>
+      </div>
+      <div class="modal-body">
+        <p id="newsModalIntro"></p>
+        <div class="news-modal-gallery" id="newsModalGallery"></div>
+        <div id="newsModalBody"></div>
+      </div>
+    </dialog>
+    
+    <div id="imageModal" class="img-modal">
+      <span class="img-close">&times;</span>
+      <img class="img-modal-content" id="imgModalContent">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
+
+
+
+
